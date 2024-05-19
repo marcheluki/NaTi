@@ -6,9 +6,7 @@ const Category = () => {
     return (
         <div className="box">
             <div className="wrapper">
-
                 <div className="icon"><i id="left" className="fa-solid fa-angle-left"></i></div>
-
                     <ul className="tabs-box">
                         <li className="tab">Coding</li>
                         <li className="tab active">JavaScript</li>

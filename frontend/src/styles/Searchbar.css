@@ -8,6 +8,12 @@
     border-radius: 100px;
 }
 
+.bg-button {
+  background-color: #182625;
+  border-radius: 100px;
+  color: white;
+}
+
 /*
 .box {
     height: 96px;

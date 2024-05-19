@@ -8,12 +8,13 @@ export const SearchBar = () => {
     <nav className="navbar bg-body-tertiary">
 
     <div className="gr-container container-fluid">
-    <button className="btn btn-outline-success">¿Cómo?</button>
-    <button className="btn btn-outline-success">¿Cuándo?</button>
-    <button className="btn btn-outline-success">¿Dónde?</button>
-      <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
+    <button className="bg-button btn btn-outline-success">¿Cómo?</button>
+    <button className="bg-button btn btn-outline-success">¿Cuándo?</button>
+    <button className="bg-button btn btn-outline-success">¿Dónde?</button>
+      <form className="bg-button d-flex" role="search">
+        <img className="search" alt="Search" src={searchIcon} />
+        <input className="bg-button form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button className="bg-button btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
 
