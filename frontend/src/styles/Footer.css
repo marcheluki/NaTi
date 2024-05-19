@@ -4,9 +4,9 @@
 
 .element-footer {
     background-color: #3c0000;
-    height: 100px;
+    height: 15vh;
     position: relative;
-    width: 1280px;
+    width: 100%;
 }
 
 .element-footer .social-icons {

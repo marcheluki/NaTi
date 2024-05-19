@@ -17,7 +17,13 @@
     position: relative;
     width: 50px;
 }
+.navbar-brand{
+    margin-left: 20px;
+}
+.bg-buttons:hover{
+    background-color: #708b75;
 
+}
 
 
 /*

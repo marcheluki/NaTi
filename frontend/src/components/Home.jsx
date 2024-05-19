@@ -4,18 +4,16 @@ import '../styles/Home.css';
 import Category from './Category.jsx'; 
 import SearchBar from './Searchbar.jsx';
 import HappyImage from './HappyImage.jsx';
+import Container from './Container.jsx';
 
 const Home = () => {
     return (
       <div>
         
-        <Navbar />
         <SearchBar />
         <HappyImage />
         <Category />
-        
-        <h1 className='container-t'>Welcome to the Home Page</h1>
-
+        <Container />
       </div>
     );
 }

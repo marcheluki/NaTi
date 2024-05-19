@@ -1,5 +1,5 @@
-import { createReserva, getReservaById } from '../db/reservasController.js';
-import { getAllExperiences, getExperience } from '../db/experienciasController.js';
+import { createReserva, getReservaById, getFechasExperienciaByDay } from '../db/reservasController.js';
+
 const createReservaRoute = async (req, res) => {
   const { fk_fechasexperienciaid, fk_usuarioquereserva } = req.body;
   try {
@@ -29,4 +29,15 @@ const getReservaByIdRoute = async (req, res) => {
   }
 };
 
-export { createReservaRoute, getReservaByIdRoute };
+const getFechasExperienciaByDayRoute = async (req, res) => {
+  const { id, date } = req.params;
+  try {
+    const fechasExperiencia = await getFechasExperienciaByDay(id, date);
+    res.json(fechasExperiencia);
+  } catch (error) {
+    console.error('Error in getFechasExperienciaByDayRoute:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+};
+
+export { createReservaRoute, getReservaByIdRoute, getFechasExperienciaByDayRoute  };

@@ -34,7 +34,7 @@ export const Footer = () => {
             <img className="divider" alt="Divider" src="divider.svg" />
             <div className="overlap-group">
                 <img className="phonto-removebg" alt="Phonto removebg" src={banner} />
-                <p className="text-wrapper">© 2024 All rights reserved.</p>
+                <p className="text-wrapper mt-3 mb-0 pb-0">© 2024 All rights reserved.</p>
             </div>
         </div>
     );

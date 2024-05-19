@@ -27,5 +27,17 @@ const getReservaById = async (id) => {
   }
 };
 
+const getFechasExperienciaByDay = async (id, date) => {
+  try {
+    const result = await db.query(
+      'SELECT * FROM Fechas_Experiencia WHERE fk_idexperiencia = $1 AND DATE(fecha) = $2',
+      [id, date]
+    );
+    return result.rows;
+  } catch (error) {
+    console.error('Error fetching experience dates:', error);
+    throw new Error('Internal Server Error');
+  }
+};
 
-export { createReserva, getReservaById };
+export { createReserva, getReservaById, getFechasExperienciaByDay };
