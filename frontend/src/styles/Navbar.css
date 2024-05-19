@@ -1,3 +1,26 @@
+.bg-navbar {
+    background-color: #182625;
+}
+
+.bg-buttons {
+    background-color: #faf3e9;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+.graphic {
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 48px;
+    height: 50px;
+    margin-bottom: -3px;
+    position: relative;
+    width: 50px;
+}
+
+
+
+/*
 .element-header-navigation {
     background-color: #182625;
     height: 125px;
@@ -87,3 +110,4 @@
     top: 34px;
     width: 120px;
 }
+*/

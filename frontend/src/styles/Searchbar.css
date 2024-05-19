@@ -1,3 +1,14 @@
+.gr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96px;
+    width: 100%;
+    background-color: hsl(131, 11%, 49%);
+    border-radius: 100px;
+}
+
+/*
 .box {
     height: 96px;
     position: relative;
@@ -10,7 +21,7 @@
     height: 96px;
     left: 0;
     /*position: fixed;
-    top: 0;*/
+    top: 0;
     width: 1197px;
   }
   
@@ -123,4 +134,4 @@
     position: relative;
     text-overflow: ellipsis;
   }
-  
+*/

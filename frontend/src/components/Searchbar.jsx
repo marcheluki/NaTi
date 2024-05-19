@@ -2,6 +2,25 @@ import React, { useState } from "react";
 import "../styles/Searchbar.css";
 import searchIcon from "../assets/search_icon.svg";
 
+
+export const SearchBar = () => {
+  return (<div>
+    <nav className="navbar bg-body-tertiary">
+
+    <div className="gr-container container-fluid">
+    <button className="btn btn-outline-success">¿Cómo?</button>
+    <button className="btn btn-outline-success">¿Cuándo?</button>
+    <button className="btn btn-outline-success">¿Dónde?</button>
+      <form className="d-flex" role="search">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button className="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+
+  </nav>
+  </div>);
+};
+/*
 export const SearchBar = () => {
   // Estado para el valor del campo de búsqueda
   const [searchTerm, setSearchTerm] = useState("");
@@ -38,5 +57,6 @@ export const SearchBar = () => {
     </div>
   );
 };
+*/
 
 export default SearchBar;

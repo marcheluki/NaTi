@@ -1,0 +1,11 @@
+.image {
+    height: 42px;
+    width: 300px;
+    display: flex;
+    align-items: left;
+}
+
+.image-paradise {
+    height: 125px;
+    width: 1197px;
+}
