@@ -1,7 +1,7 @@
 // routes/experienciasRoute.js
-import { getAllExperiences, getExperience } from '../db.js';
+import { getAllExperiences, getExperience } from '../db/experienciasController.js';
 
-const experienciasRoute = async (req, res) => {
+const getAllExperiencesRoute = async (req, res) => {
   try {
     const experiences = await getAllExperiences();
     console.log('Experiences:', experiences);
@@ -12,7 +12,7 @@ const experienciasRoute = async (req, res) => {
   }
 };
 
-const experienciaRoute = async (req, res) => {
+const getExperienceRoute = async (req, res) => {
     const { id } = req.params;
     try {
       const experience = await getExperience(id);
@@ -26,5 +26,5 @@ const experienciaRoute = async (req, res) => {
       res.status(500).json({ error: 'Internal Server Error' });
     }
 };
-export { experienciasRoute, experienciaRoute};
+export { getAllExperiencesRoute, getExperienceRoute};
 
