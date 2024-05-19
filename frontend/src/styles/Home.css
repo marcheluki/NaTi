@@ -1,0 +1,11 @@
+.container-t {
+    height: 500px;
+    background-color: #FAF3E9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    width: 1280px;
+}
